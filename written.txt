@@ -1,5 +1,10 @@
 ﻿Q3. What happens to the bounding boxes with update + fullRefit?
+Since tree structure stays the same,
+circles move and the boxes get stretched.
 
 Q4. What happens with reset (rebuild every frame) instead?
+The boxes don't overlap as often and the tree changes every frame.
 
 Q5. Why are some circles drawn with their sides cut off?
+The circles were placed anywhere on the screen,
+I fixed it by placing circles only in [radius, size - radius]
